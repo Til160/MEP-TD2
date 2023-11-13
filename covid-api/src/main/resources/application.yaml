@@ -1,0 +1,15 @@
+
+spring:
+  liquibase:
+    enabled: false
+  datasource:
+    url: jdbc:postgresql://db:5432/covid-db
+    username: postgres
+    password: admin
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate.ddl-auto: create
+
+polytech.covidapi.app.jwtSecret: j2n11eVR3IlksFl9isxYiE2Tp/ktGL3R0PLRWVAkZft6Y01my/WB3hTTzPA0nPO2sVb3ykGZiSMDohnXuxJsCOUW/G/Gu39QsDbSj1QMK0njHZvnX7RtBXQremmtAI2Z8gd9ykY6DywDZb27u9OBSm9ZwhDgeiTHliTrcdSz7YCjk1AV0RdniE8m40LVqjGMAenKRN9tPzA/KfsSft/8z5KEqjvlBegA+x6EdWsxrhm/i7Cbrxy+i2iUYBwsqo9/wIZMzJBeHKV0KMir8zKrt+8N+bDBR60jfXdT3q4o9GHIDLUJNekF6e6jETNkCJ6FqPxbtHzOit4mR1wde5ieP51jmKA5GtnLOMsQrE9BkOI=
+polytech.covidapi.app.jwtExpirationMs: 86400000
